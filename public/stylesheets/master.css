@@ -1,142 +1,88 @@
-/* global style */
-form label{
-  padding: 3px;
-  margin-bottom: 0;
-  font-weight: 300;
+/*
+  Base Style
+*/
+a{
+  text-decoration:none;
+  color:inherit;
 }
-form .form-control{
-  padding: 3px 7px;
-  font-size: inherit;
-  line-height: 20px;
-  height: auto;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  width: 100%;
+a:hover{
+  text-decoration:underline;
 }
-form fieldset{
-  margin: 7px 0 1px;
-  padding: 0px 15px;
+ul{
+  list-style-type: none;
+  padding:0;
 }
-form .form-group{
-  margin: 0;
-  padding-bottom: 6px;
+header h1{
+  color:tomato;
+  text-align:center;
 }
-.form-horizontal .control-label {
-  padding-top: 5px;
-  text-align: left;
-}
-.buttons {
-  margin: 7px 0;
-  padding: 0 5px;
-}
-.buttons form{
-  display: inline-block;
-}
-.buttons .btn-default{
-  min-width: 55px;
-  color: #165751;
-  border: 1px solid #ccc;
-  border-right: 1px solid #aaa;
-  border-bottom: 1px solid #aaa;
-  border-radius: 4px;
-  padding: 5px 10px;
-  background-color: #f5f5f5;
-  font-size: 0.8em;
-  font-weight: bold;
-}
-.buttons .btn-default:hover{
-  text-decoration: none;
-  position: relative;
-  top: 1px;
-  left: 1px;
-  border: 1px solid #ccc;
-  border-top: 1px solid #aaa;
-  border-left: 1px solid #aaa;
-}
-.contentBox{
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-}
-.contentBoxTop {
-  font-size: 14px;
-  font-weight: 600;
-  margin: 0;
-  border-bottom: 1px solid #ccc;
-  background-color: #F5F5F5;
-  padding: 6px 15px;
+footer{
+  text-align:center;
+  padding: 20px 0;
 }
 
-/* home style */
-.home h1{
-  color: darkseagreen;
-}
+/*
+  Posts Style
+*/
 
-/* post style */
-.post {
-  max-width: 670px;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 12px;
+.posts{
+  max-width: 500px;
+  margin: 0 auto;
 }
-.post h2 {
-  color: tomato;
-  text-align: center;
+.posts h3{
+  background-color: #75CEF7;
+  padding: 5px 0;
+  padding-left: 2px;
 }
-.post .post-body {
-  white-space: pre-line;
-  padding: 6px 15px 20px;
+.posts h2{
+  text-align:center;
 }
-.post .post-info{
-  font-size: 11px;
-  margin: 5px;
+.posts .index ul li{
+  padding: 4px;
+}
+.posts .index ul li>span{
+  float:right;
+}
+.posts .index ul li:nth-child(odd){
+  background-color: #75CEF7;
+}
+.posts .index ul li:nth-child(even){
+  background-color: #A8D8EF;
+}
+.posts .show .body{
+  min-height:70px;
+  white-space: pre-wrap;
+}
+.posts .show .time{
+  float:right;
+  margin:2px;
   padding: 5px 10px;
   background-color: #E4E4E4;
   border: 0 solid black;
   border-radius: 5px;
 }
-.post .post-info>div{
-  padding: 5px 0;
-  border-top: 1px dotted #999;
+.posts .show .btn_delete{
+  display:inline-block;
 }
-.post .post-info>div:first-child{
-  border-top: none;
+.posts .show .tools{
+  margin-bottom:20px;
 }
-.post .post-info span{
-  display: inline-block;
-  width: 40px;
+.posts .posts_form{
+  display:block;
+  width: 400px;
+  margin: 0 auto;
+  margin-bottom:20px;
 }
-.post-index .posts{
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
+.posts .posts_form label{
+  display:block;
+  margin:5px 0;
 }
-.post .posts th,
-.post .posts td
-{
-  padding: 7px 5px;
+.posts .posts_form input[type="text"]{
+  width:400px;
 }
-.post .posts th:first-child,
-.post .posts td:first-child
-{
-  padding-left: 15px;
-}
-.post .posts thead{
-  background-color: #F5F5F5;
-}
-.post .posts thead tr th{
-  border-bottom: 1px solid #ccc;
-}
-.post .posts tbody tr:nth-child(odd){
-  background-color: #F4FFFF;
-}
-.post .posts tbody .noData{
-  background-color: #FFFFFF;
-  text-align: center;
-}
-.post .posts .date{
-  text-align: center;
-  width: 100px;
-  padding-right: 15px;
-}
-.post-new,
-.post-edit{
-  max-width: 520px;
+.posts .posts_form textarea{
+  display:block;
+  margin-bottom:10px;
+  width:400px;
+  height: 100px;
 }

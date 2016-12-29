@@ -1,4 +1,17 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/head %>
+</head>
+<body>
+  <header>
+    <% include ../partials/header %>
+  </header>
+  <div class="posts">
+    <% include partials/top %>
+
+
 <div class="edit">
   <h3>Edit Post</h3>
   <form class="posts_form" action="/posts/<%=data._id%>?_method=put" method="post">
@@ -10,3 +23,12 @@
   </form>
   <a href="/posts/<%=data._id%>"><button>Back</button></a>
 </div>
+
+
+
+</div>
+<footer>
+<% include ../partials/footer %>
+</footer>
+</body>
+</html>
